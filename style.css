@@ -195,3 +195,62 @@ html {
 .redes-sociais img{
     width: 20px;
 }
+
+.Container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    color: #FFFFFF;
+    padding: 30px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 25px;
+    }
+    
+    .menu a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    
+    .Container-intro {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .Container-intro h1 {
+        font-size: 24px;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .text {
+        font-size: 14px;
+    }
+    
+    .text a {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+    .Container-about, .Container-skills, .Container-projets {
+        padding: 20px;
+        height: auto;
+    }
+    .image-logo {
+        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-logo img {
+    width: 30px;
+    margin-right: 20px;
+    }
+}
