@@ -102,6 +102,7 @@ html {
 
 .text h1{
     margin-bottom: 20px;
+    font-size: 40px;
 }
 .text p{
     margin-bottom: 30px;
@@ -205,6 +206,13 @@ html {
     color: #FFFFFF;
     padding: 30px 0;
     width: 100%;
+}
+.Container-footer h2 span {
+    color: #52b788;
+}
+.Container-footer h2 {
+    margin-right: 10px;
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {
