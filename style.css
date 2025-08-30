@@ -14,11 +14,17 @@ body{
 }
 
 
+
+/* incio header */
+
+
+
 .header{
    display: flex;
    flex-direction: row;
    background-color: var(--background);
    width: 100%;
+   
     
   
 }
@@ -51,7 +57,7 @@ body{
     font-weight: bold;
     font-size: 20px;
     position: relative;
-    transition: color 0.3s;
+    transition: 0.7s;
 }
 
 .menu a::after {
@@ -68,6 +74,9 @@ body{
 .menu a:hover::after {
     width: 100%;
 }
+
+/*  Inicio Intro   */
+
 .Container-intro {
     display: flex;
     flex-direction: row-reverse;
@@ -100,28 +109,28 @@ body{
     color: var(--text);
     text-decoration: none;
     font-weight: bold;
-    font-size: 19px;
-    background-color: #2d6a4f;
-    border-radius: 8px;
-    
+    font-size: 18px;
+    border:solid #52b788;
+    color: var(--text-green);
     padding: 15px 15px;
     
 }
-.button{ 
-    transition: 0.7s;
+.text a{ 
+    transition: 1s;
 }
 
-.button:hover{
-        transform: scale(1.02);
+.text a:hover{
+        background-color: #52b788;
+        color: var(--text);
         
     }
 
-.text h1{
+.text h2{
     margin-bottom: 10px;
     font-size: 20px;
     color: #2d6a4f;
 }
-.text h2{
+.text h1{
     color: #52b788;
     font-size: 40px;
     margin-bottom: 20px;
@@ -131,6 +140,10 @@ body{
     margin-bottom: 40px;
     
 }
+
+
+/* inicio about */
+
 
 .Container-about {
    display: flex;
@@ -151,6 +164,9 @@ body{
     color: #52b788;
     font-size: 50px;
 }
+
+
+/* inicio skills */
 
 
 .Container-skills {
@@ -181,8 +197,17 @@ body{
 .image-logo img {
     width: 70px;
     margin-right: 70px;
-   
+    transition: 1.10s;
+    position: relative;
+    
 }
+
+.image-logo img:hover{
+    transform: scale(1.20);
+  
+}
+
+/* inicio projetos */
 
 .Container-projets {
     display: flex;
@@ -197,6 +222,10 @@ body{
     color:var(--text-green);
     font-size: 30px;
 }
+
+
+/* incio contato */
+
 
 .Container-contato{
    display: flex;
@@ -232,11 +261,20 @@ body{
     background-color: #000000;
     border-radius: 5px;
     padding: 10px 20px;
+    transition: 0.3s;
 }
 
 .redes-sociais img{
     width: 20px;
 }
+
+.redes-sociais a:hover{
+    transform:scale(1.07)
+}
+
+
+/* inicio footer */
+
 
 .Container-footer {
     display: flex;
