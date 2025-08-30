@@ -2,7 +2,7 @@
 
 ##  MuriloDev 
 >
-<img src="assets.print.png"
+<img src="assets.print.png">
 
 <p>https://murilorocha-01.github.io/Portifolio/</p>
 
