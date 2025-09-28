@@ -7,7 +7,7 @@
 
 <a > <img src="./assets/icons/print.png" width="4000"> </a> 
 
- <h4 align="center"> <a  href="https://murilorocha-01.github.io/Portifolio/" > Acesse meu portfólio aqui </a> </h4>
+ <h4 align="center"> <a  href="portifolio-dun-one-99.vercel.app" > Acesse meu portfólio aqui </a> </h4>
 
 ---
 
@@ -17,7 +17,7 @@ Projeto feito no intuito de me apresentar, como desenvolvedor Full Stack.
 
 ## 🤯 Seções
 
-- **Home:**  Nele contem uma breve apresentação sobre que sou 
+- **Home:**  Nele contem uma breve apresentação e uma foto minha 
 
 - **Sobre :** Aqui eu aprenseto uma pouco mais afundo quem sou eu   
 
@@ -60,5 +60,3 @@ Atualmente estou aberto para oportunidades como Desenvolvedor FrontEnd Designer.
 
 
 ## 🏆 Licença
-
-The [MIT License](./LICENSE).
