@@ -3,133 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfólio MuriloDev</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,142;1,14..32,142&family=Libertinus+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,142;1,14..32,142&family=Libertinus+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
     <header>
-        <section  class="header">
-         <h1>Murilo <span>Dev</span> </h1>
-          <ul class="menu"> 
-        <li>
-         <a href="#sobre">Sobre</a>
-         </li>
-         <li>
-         <a href="#skills">Habilidades</a>
-         <li>
-         
-         </li>
-         <a href="#projetos">Projetos</a>
-         <li>
-         </li>
-         <a href="#contato">Contato</a>
-         </li>
+        <section  class="header ">
+            <h1>Murilo <span>Dev</span> </h1>
+                 <ul class="menu"> 
+
+                    <li><a href="#sobre">Sobre mim</a></li> 
+                    <li><a href="#skills">Habilidades</a>  </li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                </ul>
+        
+   
+
+        <div onclick="menuShow()"  class="mobile-menu-icon">
+           <button > <img class="icon" src="/assets/icons/nav-bar.png" alt="butão para navegar"> </button> 
+        </div>
+        <div class="mobile-menu">
+            <ul > 
+            <li><a href="#sobre">Sobre mim</a></li> 
+            <li><a href="#skills">Habilidades</a>  </li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+
           </ul>
+        </div>
+
         </section>
+
     </header>
 
 
 
 
     
-    <section class="Container-intro">
-        <div class="text">
-        <h2>Hello,world!</h2>
+<section class="Container-intro">
+    <div class="text ">
+        <h2 >Hello,world!</h2>
         <h1>Eu sou Murilo, </h1>
         <p>Desenvolvedor Full Stack</p>
         <a href="#projetos">Veja meus projetos</a>
+    </div>
+            <div class="perfil efeito-img-topo">
+            <img src="/assets/icons/perfil com fundo.png" alt="Foto de perfil do MuriloDev" >
         </div>
-            <div class="perfil">
-            <img src="assets/perfil com fundo.png" alt="Foto de perfil do MuriloDev" >
-            </div>
-    </section>
+</section>
 
 
 
 
 
-<section id="sobre" class="Container-about">
-<H2>Sobre </H2>
-<p>Desde pequeno, sempre fui apaixonado por tecnologia,
-principalmente pelo meu amor por jogos, o que despertou minha curiosidade
-e interesse pelo mundo digital. Com o tempo, vi uma oportunidade
-de expandir e aprofundar meus conhecimentos na área de tecnologia, o que me levou
-a cursar Sistemas de Informação na UNISTA em 2025. 
-    <br> <br>
-    Desde então, me apaixonei de verdade pela área. Gosto de trabalhar em desafios reais
-     e construir soluções inovadoras, e estou sempre ansioso para aprender mais, crescer
-      profissionalmente e assumir novos desafios na área de tecnologia. Nunca trabalhei 
-      na área de tecnologia, mas fiz parte da banda municipal de Peruíbe. Foi lá que 
-      aprendi a ser proativo, a me comunicar bem e a trabalhar com eficiência em equipe 
-      — habilidades essenciais em um grupo grande. <br> <br>
-    Estou sempre em busca de mais aprendizagem, e atrás de oportunidades que me façam evoluir 
-    , não só como um bom profissional mas como pessoa 
-    </p> 
+<section  id="sobre" class="Container-about">
+    
+        <H2>Sobre mim</H2>
+        <p>Desde pequeno, sempre fui apaixonado por tecnologia,
+        principalmente pelo meu amor por jogos, o que despertou minha curiosidade
+         e interesse pelo mundo digital. Com o tempo, vi uma oportunidade
+         de expandir e aprofundar meus conhecimentos na área de tecnologia, o que me levou
+        a cursar Sistemas de Informação na UNISANTA em 2025. 
+        <br> <br>
+         Desde então, me apaixonei de verdade pela área. Gosto de trabalhar em desafios reais
+         e construir soluções inovadoras, e estou sempre ansioso para aprender mais, crescer
+          profissionalmente e assumir novos desafios na área de tecnologia. Nunca trabalhei 
+         na área de tecnologia, mas fiz parte da banda municipal de Peruíbe. Foi lá que 
+         aprendi a ser proativo, a me comunicar bem e a trabalhar com eficiência em equipe 
+         — habilidades essenciais em um grupo grande. <br> <br>
+        Estou sempre em busca de mais aprendizagem, e atrás de oportunidades que me façam evoluir 
+        , não só como um bom profissional mas como pessoa 
+         </p> 
+    
 </section>
 
 
 
 
 <section id="skills" class="Container-skills">
-<h2>Habilidades</h2>
-
+        <h2>Habilidades</h2>
     <div class="image-logo">
-<img src="https://camo.githubusercontent.com/4eaf7f26830ffa4bc4c4502a24e9be29fa2796208648a805e8f610da811aeb05/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="Css">
+        <img src="https://camo.githubusercontent.com/4eaf7f26830ffa4bc4c4502a24e9be29fa2796208648a805e8f610da811aeb05/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="Css">
 
-<img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="HTML">
+        <img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="HTML">
 
-<img src="https://camo.githubusercontent.com/426c1121b29abc64a6b1af1e3aa3091abb38e39c87054720b765af1425c74e7f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="JvaScript">
-<img src="https://camo.githubusercontent.com/a07203131922e3fa0d6d0cd787edb5597771b30d712574bbc70a3c7aaa0161ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f747970657363726970742f747970657363726970742d6f726967696e616c2e737667" alt="TypeScript">
- <img src="https://camo.githubusercontent.com/34b891c76d258e4b0ee593443e5cbc2506cdbb7d3cd6bc0e4beffa87a9c1611b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667" alt="ReacJs">
- 
+        <img src="https://camo.githubusercontent.com/426c1121b29abc64a6b1af1e3aa3091abb38e39c87054720b765af1425c74e7f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="JvaScript">
+        <img src="https://camo.githubusercontent.com/a07203131922e3fa0d6d0cd787edb5597771b30d712574bbc70a3c7aaa0161ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f747970657363726970742f747970657363726970742d6f726967696e616c2e737667" alt="TypeScript">
+        <img src="https://camo.githubusercontent.com/34b891c76d258e4b0ee593443e5cbc2506cdbb7d3cd6bc0e4beffa87a9c1611b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667" alt="ReacJs">
     </div>
 </section>
 
 
 
 
-<section class="Container-projets">
-
+<section id="projetos" class="Container-projets">
     <h2>Meus Projetos</h2>
+        <div class="projetos">
 
-<div id="projetos" class="projetos">
-
-
- <img src="print.png" alt=""> 
-
-
- 
-</div>
+           
+            <img src="/assets/icons/print.png" alt=""> 
 
 
+        </div>
 
+
+</section>
 
 
 
-</section>  
 <section id="contato" class="Container-contato">
-<h2>Contato</h2>
-<span>Não esqueça de entrar em contato comigo se tiver interesse.</span>
-<div class="redes-sociais">
-<a href="https://github.com/MuriloRocha-01" target="_blank"> <img src="assets/git.png" alt="Github"></a>
-<a href="https://www.linkedin.com/in/murilo-rocha-6706a41aa/" target="_blank"> <img src="assets/linkedin.png" alt="linkedin"></a>
-<a href="mailto:murilorochadelima.10@gmail.com" target="_blank"> <img src="https://st2.depositphotos.com/4060975/8056/v/950/depositphotos_80562994-stock-illustration-email-vector-icon.jpg" alt="email" ></a>
-</div>
+        <h2>Contato</h2>
+        <span>Não esqueça de entrar em contato comigo se tiver interesse.</span>
+    <div class="redes-sociais">
+            <a href="https://github.com/MuriloRocha-01" target="_blank"> <img src="/assets/icons/git.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/murilo-rocha-6706a41aa/" target="_blank"> <img src="/assets/icons/linkedin.png" alt="linkedin"></a>
+            <a href="mailto:murilorochadelima.10@gmail.com" target="_blank"> <img src="./assets/icons/email.png" alt="email" ></a>
+    </div>
 </section>
 
 
 <footer id="footer" class="Container-footer">
-  <h2>Murilo<span>Dev</span></h2>
-  <p>Todos os direitos reservados!</p>
+    <h2>Murilo<span>Dev</span></h2>
+    <p>Todos os direitos reservados!</p>   
 </footer>
 
+
+
+
+<script src="./assets/JS/main.js"></script>
 </body>
 
 </html>

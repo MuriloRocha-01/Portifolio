@@ -8,25 +8,26 @@ html {
   scroll-behavior: smooth;
 }
 body{
-    --background-header:#000000 ;
-    --background: #181818;
+    
+    
     --text:#FFFFFF;
     --text-green: #52b788;
-    
+
+
+    background-color: var(--bg-color);
+    overflow: overlay;
+     --bg-color: hsl(0, 0%, 8%);
+
+     background-color: var(--bg-color);
 }
 
 
 /* incio header */
 
 .header{
+   padding: 1.5rem 10rem;
    display: flex;
-   flex-direction: row;
-   background-color: var(--background-header);
-   width: 100%;
-   border: solid #1d2e28 2px ;
-    position: fixed;
-    z-index: 1;
-  
+   justify-content: space-around;
 }
 .header h1 span {
     color: #52b788;
@@ -34,33 +35,30 @@ body{
 
 .header h1{
     margin-left: 10%;
-    font-size: 35px;
+    font-size: 2rem;
     color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: underline 2px #2d6a4f;
+    display: flex;
+    align-items: center;
 }
 
 .menu{
-    height: 80px;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: last baseline;
-    text-decoration: none;
-    
+    align-items: center;
+    list-style: none;
 }
-
+.menu li {
+    margin: 0 15px;
+}
 .menu a {
-    padding-bottom: 25px;
+    padding-bottom: 1.5rem;
     color: var(--text);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 1.15rem;
     position: relative;
     transition: 0.7s;
-    margin-right: 15px;
 }
 
 .menu a::after {
@@ -77,6 +75,14 @@ body{
 .menu a:hover::after {
     width: 100%;
 }
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+
 
 /*  Inicio Intro   */
 
@@ -87,7 +93,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background);
     width: 100%;
     
 }   
@@ -151,7 +156,6 @@ body{
 .Container-about {
    display: flex;
    flex-direction: column;
-    background-color: var(--background);
     padding: 30px 20%;
     height: 90vh;
     text-align: left;
@@ -159,7 +163,7 @@ body{
 }
 
 .Container-about p {
-    margin-top: 30px;
+    margin-top: 60px;
     font-size: 1.2rem;
     color: var(--text);
     margin-bottom: 20px;
@@ -178,7 +182,6 @@ body{
 .Container-skills {
     display: flex;
     flex-direction: column;
-    background-color: var(--background);
     padding: 30px 20%;
     height: 50vh;
     text-align: left;
@@ -198,7 +201,7 @@ body{
     justify-content: center;
 }
 .image-logo img {
-    margin-top: 5rem;
+    margin-top: 60px;
     width: 150px;
     margin-right: 70px;
     transition: 0.9s;
@@ -217,7 +220,6 @@ body{
 /* inicio projetos */
 
 .Container-projets {
-    background-color: var(--background);
     padding: 30px 20%;
     height: 100vh;
     text-align: left;
@@ -250,7 +252,6 @@ body{
    justify-content: center;
     align-items: center;
     height: 20vh;
-    background-color: var(--background);
        
 }
 .Container-contato h2 {
@@ -279,8 +280,6 @@ body{
 .redes-sociais a {
     color: #FFFFFF;
     text-decoration: none;
-    
-    border-radius: 5px;
     padding: 10px 20px;
     transition: 0.3s;
 }
@@ -293,7 +292,7 @@ body{
 
 
 .redes-sociais a:hover{
-    transform:scale(1.07)
+    transform:scale(1.07);
 }
 
 
@@ -302,7 +301,6 @@ body{
 
 .Container-footer {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #000;
@@ -316,12 +314,15 @@ body{
 .Container-footer h2 {
     margin-right: 10px;
     font-size: 25px;
+    display: inline;
 }
 
 
 /*Media queries*/
 
 @media (max-width: 1024px) {
+    
+    
     .header h1 {
         font-size: 25px;
     }
@@ -385,15 +386,17 @@ body{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
+
+    .header{
+        width: 100%;
+        
+    }
     .header h1 {
-        font-size:15px;
+        font-size:1rem;
     }
     
-    .menu a {
-        font-size: 14px;
-        margin: 0 5px;
-    }
+
     .Container-intro h1 {
         font-size: 20px;
     }
@@ -431,4 +434,84 @@ body{
         margin-right: 10px;
         padding: 5px;
     }
+}
+
+
+.text , .efeito-img-topo , .Container-intro ,.Container-about, .Container-skills, .Container-projets, .Container-footer, #footer, .Container-contato{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .menu{
+        display: none;
+    }
+    .header h1{
+        padding: 1.5rem 4rem;
+    }
+    .mobile-menu-icon{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .mobile-menu-icon img {
+        width: 2rem;
+    }
+   .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+   }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 1rem;
+        
+        background: transparent;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+    .mobile-menu::before{
+        content: ''; 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 11, 11, 0.3); /* Cor de fundo com transparência */
+        backdrop-filter: blur(5px); /* Efeito de desfoque */
+        z-index: -1;
+    }
+
+    .mobile-menu.open {
+        display: block ;
+    }
+    .mobile-menu ul{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding-bottom: 1rem;
+    }
+
+    .mobile-menu li{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu a {
+        padding-bottom: 1.5rem;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        position: relative;
+         transition: 0.7s;
+    }
+
 }
