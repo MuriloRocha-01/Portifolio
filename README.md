@@ -5,7 +5,7 @@
 
 
 
-<a > <img src="./assets/icons/portifolio.png" width="4000"> </a> 
+<a > <img src="./assets/img/Portfólio MuriloDev.png" width="4000"> </a> 
 
  <h4 align="center"> <a  href="portifolio-dun-one-99.vercel.app" > Acesse meu portfólio aqui </a> </h4>
 

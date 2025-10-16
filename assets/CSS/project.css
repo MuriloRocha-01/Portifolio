@@ -90,8 +90,6 @@ html {
 }
 .item:hover{
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    transform: translateY(-5px);
-    
 }
 .item p{
     color: #B5B5B5;
