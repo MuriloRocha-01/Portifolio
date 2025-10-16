@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -12,12 +12,9 @@ body{
     
     --text:#FFFFFF;
     --text-green: #52b788;
-
-
-    background-color: var(--bg-color);
+ 
     overflow: overlay;
      --bg-color: hsl(0, 0%, 8%);
-
      background-color: var(--bg-color);
 }
 
@@ -31,15 +28,14 @@ body{
 }
 .header h1 span {
     color: #52b788;
+    
 }
 
 .header h1{
-    margin-left: 10%;
     font-size: 2rem;
     color: var(--text);
     text-decoration: underline 2px #2d6a4f;
-    display: flex;
-    align-items: center;
+    
 }
 
 .menu{
@@ -85,15 +81,11 @@ body{
 
 
 
-
-
-
-
 /*  Inicio Intro   */
 
 .Container-intro {
     display: flex;
-    height: 100vh;
+    height: 90vh;
     text-align:left;
     display: flex;
     align-items: center;
@@ -103,12 +95,11 @@ body{
 }   
 
 .Container-intro img {
-    width: 400px;
-    height: 440px;
-    border-radius: 100px;
-    margin-top: 15%;
+    width: 350px;
+    border-radius: 10%;
     box-shadow: #000 0px 0px 30px;
     transition: 0.5s;
+    margin-left: 100px;
 }
 
 .Container-intro img:hover{
@@ -118,7 +109,7 @@ body{
 
 .text{
     color: var(--text);
-    margin-right: 100px;
+    
 }
 
 .text a{
@@ -137,8 +128,8 @@ body{
     }
 
 .text h2{
-    margin-bottom: 10px;
-    font-size: 1.3rem;
+    margin-left: 5px;
+    font-size: 1.4rem;
     color: #2d6a4f;
     font-family: serif;
 }
@@ -146,6 +137,7 @@ body{
     color: #52b788;
     font-size: 3.6rem;
     margin-bottom: 20px;
+    
 }
 
 .text p{
@@ -164,7 +156,7 @@ body{
     padding: 30px 20%;
     height: 90vh;
     text-align: left;
-    
+    background-color: #0D0D0D;
 }
 
 .Container-about p {
@@ -222,180 +214,79 @@ body{
   
 }
 
-/* inicio projetos */
 
-.Container-projets {
-    padding: 30px 20%;
-    height: 100vh;
-    text-align: left;
-    width: 100%;
+/* inicio footer */
+.linha{
+  width: 70%;
+  margin: 0 auto;
+  border:1px solid rgba(172,172,172);
 }
-.Container-projets h2 {
-    color:var(--text-green);
-    font-size: 50px;
-    text-align: center;
-    font-family: serif;
-}
-.Container-projets img{
-    width: 30rem;
-    height: 20rem;
-    
-    padding: 40px;
-    object-fit: cover;
+footer{
+    padding: 70px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: #0D0D0D;
+}
+.Container-footer {
+    display: block;
+    
+    color: #FFFFFF;
+    margin-right: 10%;
+    }
+.Container-footer h2 span {
+    color: #52b788;   
+}
+.Container-footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Container-footer a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 
-/* incio contato */
-
-
-.Container-contato{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-    align-items: center;
-    height: 20vh;
-       
-}
-.Container-contato h2 {
-    font-size: 50px;
-    text-align: center;
-    font-family: serif;
-    color: var(--text-green);
-    
-    
-}
-
-.Container-contato span {
-    margin-top: 20px;
-    color: var(--text);
-    text-decoration: underline;
-    font-weight: bold;
-    
-}  
 
 .redes-sociais {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
     margin-top: 20px;  
 }
 .redes-sociais a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: 0.3s;
-}
-
-.redes-sociais img{
-    width: 40px;
-    border-radius: 100%;
-}
-
-
-
-.redes-sociais a:hover{
-    transform:scale(1.07);
-}
-
-
-/* inicio footer */
-
-
-.Container-footer {
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    color: #FFFFFF;
-    padding: 30px 0;
-    width: 100%;
+    font-size: 2.3rem;
+    color: #adadad75;
+    margin-bottom: 30px;
 }
-.Container-footer h2 span {
-    color: #52b788;
+.bi{
+    transition: 0.3s ease;
+    
 }
-.Container-footer h2 {
-    margin-right: 10px;
-    font-size: 25px;
-    display: inline;
+.bi-github:hover{
+    color: #FFF;
+   transform: translateY(-5px);  
 }
+.bi-linkedin:hover{   
+    color: #087EBD;
+   transform: translateY(-5px);
+   
+}
+.bi-envelope-fill:hover{
+    color: #FFF;
+   transform: translateY(-5px);
+
+}
+
 
 
 /*Media queries*/
 
-@media (max-width: 1024px) {
-    
-    
-    .header h1 {
-        font-size: 25px;
-    }
-    
-    .menu a {
-        font-size: 17px;
-        margin: 0 10px;
-    }
-    
-    .Container-intro {
-        flex-direction: column;
-        
-    }
-    
-    .Container-intro h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .Container-intro p {
-        font-size: 1.2rem;
-    }
-    
-    .Container-about h2 {
-        font-size: 1rem;
-    }
 
-    .Container-intro img {
-        width: 300px;
-        height: 300px;
-        margin-top: 40px;
-    }
-    
-    .text {
-        font-size: 14px;
-    }
-    
-    .text a {
-        font-size: 18px;
-        padding: 8px 16px;
-    }
-    .Container-about, .Container-skills, .Container-projets {
-        padding: 10px 40px;
-        height: auto;
-    }
-
-    .Container-about h2,.Container-skills h2, .Container-projets h2, .Container-contato h2 {
-        font-size: 3rem;
-    }
-
-    .image-logo { 
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .image-logo img {
-        padding: 15px;
-     width: 130px;
-     margin-right: 20px;
-    
-    }
-
-    .projetos img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
-}
 
 @media (max-width: 540px) {
 
@@ -412,18 +303,8 @@ body{
         font-size: 20px;
     }
     
-.Container-about p {
+    .Container-about p {
     font-size: 1rem;
-}
-
-    .Container-intro img {
-        width: 200px;
-        height: 200px;
-        margin-top: 30%;
-    }
-    
-    .text {
-        font-size: 10px;
     }
     
     .text a {
@@ -459,6 +340,61 @@ body{
 
 
 @media screen and (max-width:1024px){
+    .header h1 {
+        font-size: 25px;
+    }
+    
+    .menu a {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    
+    .Container-intro {
+        flex-direction: column;
+        
+    }
+    
+    .Container-intro h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .Container-intro p {
+        font-size: 1rem;
+    }
+    
+    
+
+    .Container-intro img {
+        width: 250px;
+        height: 300px;
+        margin:40px 0;
+    }
+    
+    
+    .text a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    .Container-about, .Container-skills, .Container-projets {
+        padding: 10px 40px;
+        height: auto;
+    }
+    .Container-about p {
+        font-size: 1rem;
+    }
+    .Container-about h2,.Container-skills h2, .Container-projets h2, .Container-contato h2 {
+        font-size: 2rem;
+    }
+
+    .image-logo img {
+     padding: 13px;
+     width: 80px;
+     margin-right: 20px;
+    }
+.Container-skills {
+     height: 300px;
+}
+ 
     .menu{
         display: none;
     }
@@ -524,4 +460,5 @@ body{
          transition: 0.7s;
     }
 
+    
 }

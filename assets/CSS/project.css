@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    
+    
+    --text:#FFFFFF;
+    --text-green: #52b788;
+
+   
+    background-color: #121212;
+
+     
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header{
+   padding: 1.5rem 10rem;
+   display: flex;
+   justify-content: space-around;
+}
+.header h1 span {
+    color: var(--text-green);
+    
+}
+
+.header h1{
+    font-size: 2rem;
+    color: var(--text);
+    text-decoration: underline 2px #2d6a4f;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    padding-bottom: 1.5rem;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15rem;
+    position: relative;
+    transition: 0.7s;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0px;
+    height: 3px;
+    background: var(--text-green);
+    transition:0.5s ;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+#projetos{
+    display: flex;
+   justify-content: center;
+   background-color: #121212;
+   gap: 30px;
+   margin-top:50px;
+}
+.item{
+       display: flex;
+       gap: 10px;
+       padding: 20px;
+       border-radius: 8px;
+       flex-direction: column;
+       align-items: center;
+       background-color: #141414;
+       transition: all 0.3s ease-in-out;
+}
+.item:hover{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    transform: translateY(-5px);
+    
+}
+.item p{
+    color: #B5B5B5;
+    font-size: 1rem;
+    text-align: center;
+}
+.item a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.item a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.item img{
+    object-fit: cover;
+   width: 500px;
+   height: 300px; 
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+   transition: all 0.3s ease-in-out;
+}
+
+.item img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width:1024px){
+    .header h1 {
+        font-size: 25px;
+    }
+    
+
+}

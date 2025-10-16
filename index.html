@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Portfólio MuriloDev</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,142;1,14..32,142&family=Libertinus+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="icon" href="/assets/img/android-chrome-512x512.png"/>
 </head>
 
 
@@ -21,7 +22,7 @@
 
                     <li><a href="#sobre">Sobre mim</a></li> 
                     <li><a href="#skills">Habilidades</a>  </li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="./assets/html/projetos.html">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
 
                 </ul>
@@ -29,13 +30,13 @@
    
 
         <div onclick="menuShow()"  class="mobile-menu-icon">
-           <button > <img class="icon" src="/assets/icons/nav-bar.png" alt="butão para navegar"> </button> 
+           <button > <img class="icon" src="/assets/img/nav-bar.png" alt="butão para navegar"> </button> 
         </div>
         <div class="mobile-menu">
             <ul > 
             <li><a href="#sobre">Sobre mim</a></li> 
             <li><a href="#skills">Habilidades</a>  </li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="./assets/html/projetos.html">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
 
           </ul>
@@ -54,10 +55,10 @@
         <h2 >Hello,world!</h2>
         <h1>Eu sou Murilo, </h1>
         <p>Desenvolvedor Full Stack</p>
-        <a href="#projetos">Veja meus projetos</a>
+        <a href="./assets/html/projetos.html">Veja meus projetos</a>
     </div>
             <div class="perfil efeito-img-topo">
-            <img src="/assets/icons/perfil com fundo.png" alt="Foto de perfil do MuriloDev" >
+            <img src="/assets/img/foto_perfil.jpg" alt="Foto de Murilo com fundo de floresta" >
         </div>
 </section>
 
@@ -105,35 +106,20 @@
 
 
 
-<section id="projetos" class="Container-projets">
-    <h2>Meus Projetos</h2>
-        <div class="projetos">
+<div class="linha"></div>
 
-           
-            <img src="/assets/icons/print.png" alt=""> 
-
-
-        </div>
-
-
-</section>
-
-
-
-<section id="contato" class="Container-contato">
-        <h2>Contato</h2>
-        <span>Não esqueça de entrar em contato comigo se tiver interesse.</span>
-    <div class="redes-sociais">
-            <a href="https://github.com/MuriloRocha-01" target="_blank"> <img src="/assets/icons/git.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/murilo-rocha-6706a41aa/" target="_blank"> <img src="/assets/icons/linkedin.png" alt="linkedin"></a>
-            <a href="mailto:murilorochadelima.10@gmail.com" target="_blank"> <img src="./assets/icons/email.png" alt="email" ></a>
-    </div>
-</section>
-
-
-<footer id="footer" class="Container-footer">
-    <h2>Murilo<span>Dev</span></h2>
+<footer id="footer" >
+    <div class="Container-footer">
+    <a href="https://portifolio-dun-one-99.vercel.app/"> <h2>Murilo<span>Dev</span></h2></a>
     <p>Todos os direitos reservados!</p>   
+    </div>
+
+    <div class="redes-sociais">
+            <a  href="https://github.com/MuriloRocha-01" target="_blank"> <i class="bi bi-github"></i></a>
+            <a class="link-02" href="https://www.linkedin.com/in/murilo-rocha-6706a41aa/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+            <a class="link-03" href="mailto:murilorochadelima.10@gmail.com" target="_blank"> <i class="bi bi-envelope-fill"></i></a>
+    </div>
+    
 </footer>
 
 
