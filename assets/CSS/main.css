@@ -288,64 +288,30 @@ footer{
 
 
 
-@media (max-width: 540px) {
-
-    .header{
-        width: 100%;
-        
-    }
-    .header h1 {
-        font-size:1rem;
-    }
-    
-
-    .Container-intro h1 {
-        font-size: 20px;
-    }
-    
-    .Container-about p {
-    font-size: 1rem;
-    }
-    
-    .text a {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-    
-    .Container-about, .Container-skills, .Container-projets {
-        padding: 15px;
-        height: auto;
-    }
-
-    .Container-about h2,.Container-skills h2, .Container-projets h2, .Container-contato h2{
-        font-size: 2.5rem;
-    }
-    
-    .image-logo img {
-        width: 70px;
-        margin-right: 10px;
-        padding: 5px;
-    }
-}
-
 
 .text , .efeito-img-topo , .Container-intro ,.Container-about, .Container-skills, .Container-projets, .Container-footer, #footer, .Container-contato{
     visibility: hidden;
 }
 
 
-
+@media screen and (min-width:1000px){
+    .image-logo img {
+     padding: 13px;
+     width: 100px;
+     margin-right: 20px;
+    }
+}
 
 
 
 
 @media screen and (max-width:1024px){
     .header h1 {
-        font-size: 25px;
+        font-size: 2.2rem;
     }
     
     .menu a {
-        font-size: 17px;
+        font-size: 2rem;
         margin: 0 10px;
     }
     
@@ -462,3 +428,5 @@ footer{
 
     
 }
+
+/* End of original rules */
